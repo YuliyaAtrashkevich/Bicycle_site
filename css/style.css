@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-image: url(../img/header_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.header__container {
+    max-width: 630px;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header__menu-item {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    color: #4d4959;
+}
+
+.header__menu-item:nth-child(1) {
+    margin-right: 32px;
+}
+
+.header__menu-item:nth-child(1)::after {
+    content: ".";
+    margin-left: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    color: #4d4959;
+}
+
+.header__menu-link {
+    text-decoration: none;
+    color: #4d4959;
+}
+
+.header__menu-img {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 930px) {
+    .header {
+        max-height: 70vh;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        max-height: 50vh;
+    }
+
+    .header__container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Сделать меню-бургер!! */
+
+.about {
+}
+
+.about__container {
+    display: block;
+    padding-top: 115px;
+    padding-bottom: 143px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1122px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about__icon {
+    margin-bottom: 28px;
+}
+
+.about__h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #353738;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+.about__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #848789;
+    letter-spacing: 0.001em;
+}
+
+
