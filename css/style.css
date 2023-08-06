@@ -92,12 +92,13 @@ body {
 /* Сделать меню-бургер!! */
 
 .about {
+    background-color: #f7f7f7;
 }
 
 .about__container {
     display: block;
     padding-top: 115px;
-    padding-bottom: 143px;
+    padding-bottom: 136px;
     padding-left: 20px;
     padding-right: 20px;
     max-width: 1122px;
@@ -105,11 +106,13 @@ body {
     text-align: center;
 }
 
-.about__icon {
+.about__icon,
+.vintage__icon {
     margin-bottom: 28px;
 }
 
-.about__h2 {
+.about__h2,
+.vintage__h2 {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 18px;
@@ -125,4 +128,79 @@ body {
     letter-spacing: 0.001em;
 }
 
+.vintage {
+}
+
+.vintage__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.vintage__col1 {
+    min-height: 600px;
+    overflow: hidden;
+    flex-grow: 2;
+}
+
+.vintage__bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vintage__col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vintage__description {
+    padding-top: 70px;
+    padding-bottom: 51px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    max-width: 430px;
+}
+
+.vintage__text::after {
+    content: "";
+    display: block;
+    margin: 32px auto 0;
+    width: 55px;
+    height: 1px;
+    background-color: #ebebeb;
+}
+
+.vintage__icon {
+    margin-bottom: 22px;
+}
+
+.vintage__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #848789;
+    letter-spacing: 0.001em;
+    text-align: justify;
+}
+
+.vintage__bg-small {
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.vintage__bg-img-small {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Добавить медиазапросы для мобилки */
+
+@media (max-width: 640px) {
+    
+}
 
